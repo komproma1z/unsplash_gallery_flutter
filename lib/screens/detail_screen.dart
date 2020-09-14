@@ -10,12 +10,12 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(22, 22, 22, 1),
+        backgroundColor: Theme.of(context).primaryColor,
         centerTitle: true,
       ),
       body: Container(
         decoration: BoxDecoration(
-          color: Color.fromRGBO(22, 22, 22, 1)
+          color: Theme.of(context).primaryColor
         ),
         child: Image.network(image,
           loadingBuilder:(BuildContext context, Widget child, ImageChunkEvent loadingProgress) {

@@ -28,12 +28,12 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Unsplash gallery'),
-        backgroundColor: Color.fromRGBO(22, 22, 22, 1),
+        backgroundColor: Theme.of(context).primaryColor,
         centerTitle: true,
       ),
       body: Container(
         decoration: BoxDecoration(
-          color: Color.fromRGBO(22, 22, 22, 1)
+          color: Theme.of(context).primaryColor
         ),
         child: Padding(
           padding: const EdgeInsets.all(5.0),
